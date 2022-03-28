@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_categories",
+  "info": {
+    "singularName": "product-category",
+    "pluralName": "product-categories",
+    "displayName": "product_category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "categorty": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categorty.categorty",
+      "inversedBy": "product_categories"
+    }
+  }
+}

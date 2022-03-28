@@ -4,7 +4,8 @@
   "info": {
     "singularName": "discount",
     "pluralName": "discounts",
-    "displayName": "discount"
+    "displayName": "discount",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,8 +18,17 @@
     "sale_rate": {
       "type": "decimal"
     },
-    "sale_date": {
+    "end_period": {
       "type": "datetime"
+    },
+    "strart_period": {
+      "type": "datetime"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "discount"
     }
   }
 }

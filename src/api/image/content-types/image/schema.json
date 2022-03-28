@@ -20,6 +20,12 @@
       "relation": "manyToOne",
       "target": "api::product.product",
       "inversedBy": "prodcut_image"
+    },
+    "review": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::review.review",
+      "inversedBy": "images"
     }
   }
 }
