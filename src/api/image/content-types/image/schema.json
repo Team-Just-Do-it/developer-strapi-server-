@@ -15,16 +15,22 @@
     "image_url": {
       "type": "string"
     },
-    "pr_image": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::product.product",
-      "inversedBy": "prodcut_image"
-    },
     "review": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::review.review",
+      "inversedBy": "images"
+    },
+    "pr_image": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "product_image"
+    },
+    "event_image": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event.event",
       "inversedBy": "images"
     }
   }

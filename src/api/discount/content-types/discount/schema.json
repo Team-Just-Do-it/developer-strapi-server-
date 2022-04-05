@@ -21,7 +21,7 @@
     "end_period": {
       "type": "datetime"
     },
-    "strart_period": {
+    "start_period": {
       "type": "datetime"
     },
     "product": {

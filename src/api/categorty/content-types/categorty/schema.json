@@ -4,7 +4,7 @@
   "info": {
     "singularName": "categorty",
     "pluralName": "categorties",
-    "displayName": "categorty",
+    "displayName": "category",
     "description": ""
   },
   "options": {
@@ -19,13 +19,13 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::event-category.event-category",
-      "mappedBy": "categorty"
+      "mappedBy": "category"
     },
     "product_categories": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product-category.product-category",
-      "mappedBy": "categorty"
+      "mappedBy": "category"
     }
   }
 }
