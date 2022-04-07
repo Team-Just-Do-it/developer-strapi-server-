@@ -29,6 +29,24 @@
       "relation": "oneToMany",
       "target": "api::product.product",
       "mappedBy": "event"
+    },
+    "images": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::image.image",
+      "mappedBy": "event_image"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "event_comments"
+    },
+    "start_period": {
+      "type": "datetime"
+    },
+    "end_period": {
+      "type": "datetime"
     }
   }
 }

@@ -21,7 +21,7 @@
     "sell_count": {
       "type": "integer"
     },
-    "prodcut_image": {
+    "product_image": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::image.image",
@@ -68,6 +68,24 @@
       "relation": "manyToOne",
       "target": "api::product-wishlist.product-wishlist",
       "inversedBy": "products"
+    },
+    "name": {
+      "type": "string"
+    },
+    "product_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-category.product-category",
+      "inversedBy": "product"
+    },
+    "brand_name": {
+      "type": "string"
+    },
+    "is_liked": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "product_like"
     }
   }
 }
