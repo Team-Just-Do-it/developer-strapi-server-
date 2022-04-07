@@ -69,9 +69,6 @@
       "target": "api::product-wishlist.product-wishlist",
       "inversedBy": "products"
     },
-    "like_counts": {
-      "type": "biginteger"
-    },
     "name": {
       "type": "string"
     },
@@ -83,6 +80,12 @@
     },
     "brand_name": {
       "type": "string"
+    },
+    "is_liked": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "product_like"
     }
   }
 }

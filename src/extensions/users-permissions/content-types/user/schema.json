@@ -104,6 +104,12 @@
       "relation": "oneToOne",
       "target": "api::wishlist.wishlist",
       "inversedBy": "users"
+    },
+    "product_like": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product",
+      "inversedBy": "is_liked"
     }
   }
 }
